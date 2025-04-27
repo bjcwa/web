@@ -1,0 +1,39 @@
+a.leftb:link {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftb:visited {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftb:active {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftb:hover {
+	color: rgb(0, 102, 204); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.left:link {
+	color: rgb(102, 102, 102); font-size: 12px; text-decoration: none;
+}
+a.left:visited {
+	color: rgb(102, 102, 102); font-size: 12px; text-decoration: none;
+}
+a.left:active {
+	color: rgb(102, 102, 102); font-size: 12px; text-decoration: none;
+}
+a.left:hover {
+	color: rgb(255, 0, 0); font-size: 12px; text-decoration: none;
+}
+a.leftg:link {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftg:visited {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftg:active {
+	color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+a.leftg:hover {
+	color: rgb(0, 102, 255); font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.oeng {
+	color: rgb(255, 255, 255); font-family: "ËÎÌו"; font-size: 14px; font-weight: bold;
+}

@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>金蝶网络 >> kingdee</title>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href='../Skin/DefaultSkin.css' rel='stylesheet' type='text/css'> <script language='JavaScript' type='text/JavaScript' src='../js/menu.js'></script>
+<script type='text/javascript' language='JavaScript1.2' src='../js/stm31.js'></script><script language='JavaScript' type='text/JavaScript' src='../js/TreeGuide.js'></script>
+<script language='JavaScript' type='text/JavaScript'>
+//树形导航的JS代码
+var expandState = 0;
+function expand(){
+  if(expandState == 0){setPace('master', 0, 10, 10); if(ie){document.menutop.src = '/images/menui.gif'}; expandState = 1;}
+  else{setPace('master', -200, 10, 10); if(ie){document.menutop.src='/images/menuo.gif'}; expandState = 0;}
+}
+document.write("<style type=text/css>#master {LEFT: -200px; POSITION: absolute; TOP: 25px; VISIBILITY: visible; Z-INDEX: 999}</style>")
+document.write("<table id=master width='218' border='0' cellspacing='0' cellpadding='0'><tr><td><img border=0 height=6 src=/images/menutop.gif  width=200></td><td rowspan='2' valign='top'><img id=menu onMouseOver=javascript:expand() border=0 height=70 name=menutop src=/images/menuo.gif width=18></td></tr>");
+document.write("<tr><td valign='top'><table width='100%' border='0' cellspacing='5' cellpadding='0'><tr><td height='400' valign='top'><table width=100% height='100%' border=1 cellpadding=0 cellspacing=5 bordercolor='#666666' bgcolor=#ecf6f5 style=FILTER: alpha(opacity=90)><tr>");
+document.write("<td height='10' align='center' bordercolor='#ecf6f5'><font color=999900><strong>栏 目 树 形 导 航</strong></font></td></tr><tr><td valign='top' bordercolor='#ecf6f5'>");
+document.write("<iframe width='100%' height='350' src='/kingdee/ClassTree.asp' frameborder=0 allowTransparency='true'></iframe></td></tr></table></td></tr></table></td></tr></table>");
+var ie = document.all ? 1 : 0
+var ns = document.layers ? 1 : 0
+var master = new Object('element')
+master.curLeft = -200;   master.curTop = 10;
+master.gapLeft = 0;      master.gapTop = 0;
+master.timer = null;
+if(ie){var sidemenu = document.all.master;}
+if(ns){var sidemenu = document.master;}
+setInterval('FixY()',100);
+</script>
+
+</head>
+<body  onmousemove='HideMenu()'> 
+<div id=menuDiv style='Z-INDEX: 1000; VISIBILITY: hidden; WIDTH: 1px; POSITION: absolute; HEIGHT: 1px; BACKGROUND-COLOR: #9cc5f8'></div> 
+<!-- ********网页顶部代码开始******** -->
+<table height=114 cellSpacing=0 cellPadding=0 width=778 align=center background=../Skin/Ocean/top_bg.jpg border=0>
+    <tr>
+      <td width=213><a href='../index.html' title='金蝶' target='_blank'><img src='../images/logo.gif' width='213' height='114' border='0'></a></td>
+      <td>
+        <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <tr>
+            <td colSpan=2 align="right">
+              <table cellSpacing=0 cellPadding=0 align=right border=0>
+                <tr>
+                  <td><a href="../Announcelist.html"><IMG height=25 src="../Skin/Ocean/Announce_01.jpg" border="0" alt="网站公告列表"></a></td>
+                  <td class=showa width=280 background=../Skin/Ocean/Announce_02.jpg><MARQUEE onmouseover=this.stop() onmouseout=this.start() scrollAmount=1 scrollDelay=4 width=430 align="left"><p>&nbsp;&nbsp;没有公告</p>
+                  </MARQUEE></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td width="83%" height=80><a href='../index.html' title='金蝶'><img src='../images/banner.jpg' width='468' height='60' border='0'></a></td>
+            <td width="17%">
+              <table height=89 cellSpacing=0 cellPadding=0 width=94 background=../Skin/Ocean/topr.gif border=0>
+                <tr>
+                  <td align=middle colSpan=2>
+                    <table height=56 cellSpacing=0 cellPadding=0 width=79 border=0>
+                      <tr>
+                        <td align=middle width=26><IMG height=13 src="../Skin/Ocean/arrows.gif" width=13></td>
+                        <td width=68><A class=Bottom href="javascript:window.external.addFavorite('../index.html','金蝶');">加入收藏</A></td>
+                      </tr>
+                      <tr>
+                        <td align=middle><IMG height=13 src="../Skin/Ocean/arrows.gif" width=13></td>
+                        <td><A class=Bottom onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('../index.html');" href="#">设为首页</A></td>
+                      </tr>
+                      <tr>
+                        <td align=middle><IMG height=13 src="../Skin/Ocean/arrows.gif" width=13></td>
+                        <td><A class=Bottom href="mailto:info@111.net">联系站长</A></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+  <table cellSpacing=0 cellPadding=0 width=778 align=center border=0>
+    <tr>
+      <td class=menu_s align=middle>&nbsp;|&nbsp;<a class='Channel' href='../Index-2.html'>网站首页</a>&nbsp;|&nbsp;<a class='Channel2'  href='Index.html' target='_blank' title='kingdee'>kingdee</a>&nbsp;|&nbsp;</td>
+    </tr>
+    <tr>
+      <td class=top_nav_menu><script language='JavaScript1.2' type='text/JavaScript' src='JS/ShowClass_Menu.js'></script>
+</td>
+    </tr>
+    <tr>
+      <td><IMG height=7 src="../Skin/Ocean/menu_bg2.jpg" width=778></td>
+    </tr>
+    <tr>
+      <td background=../Skin/Ocean/addr.jpg height=21>
+        <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <tr>
+<td align=middle width="5%"><IMG height=17 src="../Skin/Ocean/arrows2.gif" width=16></td>
+      <td width="95%">&nbsp;<a class='LinkPath' href='../index.html'>金蝶</a>&nbsp;>>&nbsp;<a class='LinkPath' href='Index.html'>kingdee</a>&nbsp;>>&nbsp;推荐信息</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td background=../Skin/Ocean/addr_line.jpg height=4></td>
+    </tr>
+  </table>
+<!-- ********网页顶部代码结束******** --> 
+<!-- ********网页中部代码开始******** --> 
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0" class="center_tdbgall"> 
+  <tr> 
+    <!--网页中部左栏代码开始--> 
+    <td width="180" rowspan="6" align="left" valign="top" class="left_tdbgall"> <table width="100%" border="0" cellspacing="0" cellpadding="0" style="word-break:break-all;Width:fixed"> 
+        <tr> 
+          <td align="center" class="left_title">专 题 栏 目</td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg1"><script language='javascript' src='JS/ShowSpecialList.js'></script></td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg2"></td> 
+        </tr> 
+        <tr> 
+          <td align="center" class="left_title"><a class="class" href="ShowHot.html">最 新 热 门</a></td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg1"><script language='javascript' src='JS/Article_Hot2.js'></script></td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg2"></td> 
+        </tr> 
+        <tr> 
+          <td align="center" class="left_title"><a class="class" href="ShowElite.html">最 新 推 荐</a></td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg1"><script language='javascript' src='JS/Article_Elite2.js'></script></td> 
+        </tr> 
+        <tr> 
+          <td class="left_tdbg2"></td> 
+        </tr> 
+      </table></td> 
+    <!--网页中部左栏代码结束--> 
+    <!--网页中部左间隔代码开始--> 
+    <td width="5" rowspan="2"></td> 
+    <!--网页中部左间隔代码结束--> 
+    <!--网页中部中栏代码开始--> 
+    <td width="575" valign="top" class="main_tdbgall">
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" Class="main_title_575" style="word-break:break-all;Width:fixed">
+        <tr>
+          <td><b>推荐信息列表</b></td>
+        </tr>
+      </table>
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" Class="main_tdbg_575" style="word-break:break-all;Width:fixed">
+      <tr>
+        <td height="100" valign="top"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="images/Article_elite.gif" alt="推荐信息"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="kis/10.html" title="文章标题：金蝶KIS迷你版
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013/1/9 20:09:50" target="_self">金蝶KIS迷你版</a></td><td align="center" class="listbg" width="80">佚名</td><td align="right" class="listbg" width="40">01-09</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="images/Article_elite.gif" alt="推荐信息"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="K3/53.html" title="文章标题：K/3&nbsp;WISE&nbsp;财务会计
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013/1/9 14:32:07" target="_self">K/3&nbsp;WISE&nbsp;财务会计</a></td><td align="center" class="listbg2" width="80">佚名</td><td align="right" class="listbg2" width="40">01-09</td></tr><tr><td width="10" valign="top" class="listbg"><img src="images/Article_elite.gif" alt="推荐信息"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="kis/9.html" title="文章标题：金蝶KIS标准版
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013/1/8 20:07:59" target="_self">金蝶KIS标准版</a></td><td align="center" class="listbg" width="80">佚名</td><td align="right" class="listbg" width="40">01-08</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="images/Article_elite.gif" alt="推荐信息"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="K3/54.html" title="文章标题：K/3&nbsp;WISE&nbsp;供应链
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013/1/8 14:32:58" target="_self">K/3&nbsp;WISE&nbsp;供应链</a></td><td align="center" class="listbg2" width="80">佚名</td><td align="right" class="listbg2" width="40">01-08</td></tr><tr></tr></table></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><div class="show_page">共 <b>4</b> 条信息&nbsp;&nbsp;&nbsp;首页 | 上一页 | <font color="FF0000">1</font> | 下一页 | 尾页&nbsp;<b>20</b>条信息/页&nbsp;&nbsp;转到第<Input type='text' name='page' size='3' maxlength='5' value='1' onKeyPress="if (event.keyCode==13) window.location='ShowElitea54e.html?page='+this.value;">页</div></td>
+      </tr>
+    </table>
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0" style="word-break:break-all;Width:fixed">
+        <tr>
+          <td Class="main_shadow"></td>
+        </tr>
+        <tr>
+          <td Class="main_title_575"><b>最新图片信息</b></td>
+        </tr>
+        <tr>
+          <td Class="main_tdbg_575"><table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="kingdee/79.html" title="文章标题：移动互联时代需要社交化的人力资源管理创新
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:20:16" target="_blank"><img class='pic1' src='UploadFiles_2724/201503/20150304172113505.jpg'  width='130' height='90' border='0'></a><br><a class="" href="kingdee/79.html" title="文章标题：移动互联时代需要社交化的人力资源管理创新
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:20:16" target="_blank">移动互联时代需要社交…</a></td><td align='center'><a class="" href="kingdee/78.html" title="文章标题：金蝶中间件携众厂商&nbsp;共建信息安全品牌联盟
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:18:13" target="_blank"><img class='pic1' src='UploadFiles_2724/201503/20150304171957503.jpg'  width='130' height='90' border='0'></a><br><a class="" href="kingdee/78.html" title="文章标题：金蝶中间件携众厂商&nbsp;共建信息安全品牌联盟
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:18:13" target="_blank">金蝶中间件携众厂商&nbsp;共…</a></td><td align='center'><a class="" href="kingdee/77.html" title="文章标题：移动互联网时代集团管控发展新趋势
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:12:15" target="_blank"><img class='pic1' src='UploadFiles_2724/201503/20150304171745519.png'  width='130' height='90' border='0'></a><br><a class="" href="kingdee/77.html" title="文章标题：移动互联网时代集团管控发展新趋势
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/3/4 17:12:15" target="_blank">移动互联网时代集团管…</a></td><td align='center'><a class="" href="kingdee/72.html" title="文章标题：金蝶双核驱动，加速向移动互联网转型
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/2/27 20:58:47" target="_blank"><img class='pic1' src='UploadFiles_2724/201402/20140227210112394.jpg'  width='130' height='90' border='0'></a><br><a class="" href="kingdee/72.html" title="文章标题：金蝶双核驱动，加速向移动互联网转型
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/2/27 20:58:47" target="_blank">金蝶双核驱动，加速向…</a></td></tr></table></td>
+        </tr>
+        <tr>
+          <td Class="main_shadow"></td>
+        </tr>
+      </table></td>
+    <!--网页中部中栏代码结束--> 
+    <!--网页中部右间隔代码开始-->
+    <td width="1" rowspan="2"></td> 
+    <!--网页中部右间隔代码结束-->
+  </tr>
+  <tr>
+    <td valign="top" Class="main_Search"><table width='100%' border='0' align="center"cellpadding='2' cellspacing='0'>
+      <tr>
+        <td width="18%" align="center"><img src="../Images/checkarticle.gif" width="15" height="15" align="absmiddle"> 站内信息搜索</td>
+        <td align="center"><script language='JavaScript' type='text/JavaScript' src='JS/ShowSearchForm.js'></script></td><td align='right'> <a href='Search.html'><u>高级搜索</u></a></td>
+      </tr>
+    </table></td>
+  </tr> 
+</table> 
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0" class="center_tdbgall"> 
+  <tr> 
+    <td Class="main_shadow"></td> 
+  </tr> 
+</table>
+<!-- ********网页中部代码结束******** --> 
+<!-- ********网页底部代码开始******** -->
+<table cellSpacing=0 cellPadding=0 width=778 align=center border=0>
+    <tr>
+      <td class=menu_bottombg align=middle>| <A class=Bottom onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('../index.html');" href="#">设为首页</A> | <A class=Bottom href="javascript:window.external.addFavorite('../index.html','金蝶');">加入收藏</A> | <A class=Bottom href="mailto:info@111.net">联系站长</A> | <A class=Bottom href="../FriendSite/Index.html" target=_blank>友情链接</A> | <A class=Bottom href="../Copyright.html" target=_blank>版权申明</A> | <A class=Bottom href="../Announcelist.html" target=_blank>网站公告</A> |  <a class='Bottom' href='../Admin/Admin_login.html' target='_blank'>管理登录</a>&nbsp;|&nbsp;</td>
+    </tr>
+    <tr>
+      <td class=bottom_bg height=80>
+        <table cellSpacing=0 cellPadding=0 width="90%" align=center border=0>
+          <tr>
+            <td><IMG height=80 src="../Skin/Ocean/bottom_left.gif" width=9></td>
+            <td align=middle width="80%">金蝶网络 站长：<A href="mailto:info@111.net"></A> </td>
+            <td align=right><IMG height=80 src="../Skin/Ocean/bottom_r.gif" width=9></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> 
+  <!-- ********网页底部代码结束******** -->
+</body>
+</html>
